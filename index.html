@@ -81,23 +81,6 @@
               </li>
             </ul>
             <div class="spasi"></div>
-            <script type="text/javascript">
-              var now = new Date();
-              var day = now.getDate();
-              var month = now.getMonth() + 1;
-              var year = now.getFullYear() + 1;
-
-              var nextyear = month + "/" + day + "/" + year + " 07:07:07";
-              var harih = "03/10/2022 18:00:00";
-
-              $("#hitungmundur").countdown(
-                {
-                  date: harih, // TODO Date format: 07/27/2017 17:00:00
-                  offset: +2, // TODO Your Timezone Offset
-                },
-                function () {}
-              );
-            </script>
           </div>
           <!-- End Countdown -->
         </div>
@@ -169,6 +152,23 @@
         easing: "ease-out",
         duration: 800,
       });
+    </script>
+    <script type="text/javascript">
+      var now = new Date();
+      var day = now.getDate();
+      var month = now.getMonth() + 1;
+      var year = now.getFullYear() + 1;
+
+      var nextyear = month + "/" + day + "/" + year + " 07:07:07";
+      var harih = "03/10/2022 18:00:00";
+
+      $("#hitungmundur").countdown(
+        {
+          date: harih, // TODO Date format: 07/27/2017 17:00:00
+          offset: +2, // TODO Your Timezone Offset
+        },
+        function () {}
+      );
     </script>
   </body>
 </html>
