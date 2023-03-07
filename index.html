@@ -60,22 +60,22 @@
           <div>
             <ul id="hitungmundur">
               <li>
-                <span class="days">03.</span>
+                <span id="days">03.</span>
                 <p class="days_text">يوم</p>
               </li>
               <li class="separator">:</li>
               <li>
-                <span class="hours">18</span>
+                <span id="hours">18</span>
                 <p class="hours_text">ساعة</p>
               </li>
               <li class="separator">:</li>
               <li>
-                <span class="minutes">32</span>
+                <span id="minutes">32</span>
                 <p class="minutes_text">دقيقة</p>
               </li>
               <li class="separator">:</li>
               <li>
-                <span class="seconds">49</span>
+                <span id="seconds">49</span>
                 <p class="seconds_text">ثواني</p>
               </li>
             </ul>
@@ -170,13 +170,13 @@
         var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
         var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-      
+
         // Display the result in the element with id="demo"
 
-        document.getSelection("#hitungmundur > li:nth-child(1) > span").innerHTML = days;
-        document.getSelection("#hitungmundur > li:nth-child(3) > span").innerHTML = hours;
-        document.getSelection("#hitungmundur > li:nth-child(5) > span").innerHTML = minutes;
-        document.getSelection("#hitungmundur > li:nth-child(7) > span").innerHTML = seconds;
+        document.getElementById("days").innerHTML = days;
+        document.getElementById("hours").innerHTML = hours;
+        document.getElementById("minutes").innerHTML = minutes;
+        document.getElementById("seconds").innerHTML = seconds;
       
         // If the count down is finished, write some text
         if (distance < 0) {
